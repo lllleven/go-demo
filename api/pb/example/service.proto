@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package example;
+
+import "google/api/annotations.proto";
+import "api/pb/example/rpc_common.proto";
+
+option go_package = "./;example";
+
+service BaseService {
+  rpc GetExample(ExampleRequest) returns (ExampleResponse) {
+    option (google.api.http) = {
+      post: "api/v1/example/get-example";
+      body: "*";
+    };
+  }
+}
+

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package example;
+
+option go_package = "./;example";
+
+message ExampleRequest {
+  string name = 1;
+}
+
+message ExampleResponse {
+  string message = 1;
+}

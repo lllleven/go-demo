@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package example;
+
+option go_package = "./;proto";
+
+enum ExampleRole {
+  ExampleRoleUnknown = 0;
+  ExampleRoleUser = 1;
+}
+
+message Example {
+  string id = 1; // @gotags: bson:"_id,omitempty"
+  string name = 2;
+  int64 ct = 3;
+  int64 ut = 4;
+  repeated ExampleRole roles = 5;
+}
