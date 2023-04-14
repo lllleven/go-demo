@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../
+cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../../
 
 module=$1
 

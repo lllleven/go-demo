@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package example;
 
-import "google/api/annotations.proto";
+import "api/google/api/annotations.proto";
 import "api/pb/example/rpc_common.proto";
 
 option go_package = "./;example";
